@@ -30,9 +30,9 @@ const About = () => {
           <div className="about-details" data-aos="fade-left">
             <div className="about-card">
               <h3><HiAcademicCap /> Education</h3>
-              <p>BSc in Software Engineering</p>
+              <p>Diploma in Information Technology</p>
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>
-                University of Sri Jayewardenepura
+                University of Moratuwa, Sri Lanka (2026 - 2028)
               </p>
             </div>
 
