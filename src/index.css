@@ -1,8 +1,8 @@
 :root {
-  --primary: #3b82f6;
-  --primary-dark: #2563eb;
-  --primary-light: #1e3a5f;
-  --primary-bg: rgba(59, 130, 246, 0.15);
+  --primary: #ff9500;
+  --primary-dark: #ff8c00;
+  --primary-light: #ffa500;
+  --primary-bg: rgba(255, 149, 0, 0.15);
   --bg: #0f172a;
   --bg-alt: #1e293b;
   --bg-card: #1e293b;
@@ -139,7 +139,7 @@ img {
 .btn-primary:hover {
   background: var(--primary-dark);
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+  box-shadow: 0 8px 25px rgba(255, 149, 0, 0.35);
 }
 
 .btn-outline {
@@ -152,7 +152,7 @@ img {
   background: var(--primary);
   color: #fff;
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+  box-shadow: 0 8px 25px rgba(255, 149, 0, 0.35);
 }
 
 @media (max-width: 1024px) {

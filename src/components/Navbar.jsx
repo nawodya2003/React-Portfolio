@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="container">
         <Link to="hero" smooth duration={500} className="logo">
-          Nawodya<span>.</span>
+          Nawodya Rashmina<span>.</span>
         </Link>
 
         <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
@@ -29,7 +29,7 @@ const Navbar = () => {
           {navItems.map(item => (
             <Link
               key={item}
-              to={item.toLowerCase()}
+              to={item.toLowerCase() === 'home' ? 'hero' : item.toLowerCase()}
               smooth
               duration={500}
               spy
