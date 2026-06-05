@@ -33,10 +33,10 @@ const Hero = () => {
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
               <FaInstagram />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://www.linkedin.com/in/nawodya-rashmina-59aa2435b" target="_blank" rel="noopener noreferrer" className="social-link">
               <FaLinkedin />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://github.com/nawodya2003" target="_blank" rel="noopener noreferrer" className="social-link">
               <FaGithub />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">

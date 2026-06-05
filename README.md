@@ -1,16 +1,125 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React and Vite. It includes sections for hero, about, skills, projects, and a contact form powered by EmailJS.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Before you run this project, make sure you have:
 
-## React Compiler
+| Requirement | Recommended version |
+|-------------|---------------------|
+| [Node.js](https://nodejs.org/) | 18.x or newer (LTS) |
+| npm | Comes with Node.js |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+To check if they are installed, open a terminal and run:
 
-## Expanding the ESLint configuration
+```bash
+node -v
+npm -v
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Step-by-step: run locally
+
+### 1. Clone or download the project
+
+If you use Git:
+
+```bash
+git clone <your-repository-url>
+cd "React Portfolio"
+```
+
+Or open the project folder in your terminal if you already have it on your machine.
+
+### 2. Install dependencies
+
+From the project root (the folder that contains `package.json`):
+
+```bash
+npm install
+```
+
+This downloads React, Vite, and all other packages listed in `package.json`.
+
+### 3. Configure environment variables (contact form)
+
+The contact form uses [EmailJS](https://www.emailjs.com/). Create a file named `.env` in the project root with:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+**How to get these values:**
+
+1. Sign up at [emailjs.com](https://www.emailjs.com/).
+2. Create an **Email Service** and copy the **Service ID**.
+3. Create an **Email Template** and copy the **Template ID**.
+4. Open **Account → API Keys** and copy your **Public Key**.
+
+> **Note:** The site will still run without `.env`, but the contact form will fail when you submit it until these variables are set.
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Vite prints a local URL in the terminal (usually `http://localhost:5173`). Open that URL in your browser.
+
+The page reloads automatically when you edit files.
+
+### 5. Stop the server
+
+In the terminal where the dev server is running, press `Ctrl + C`.
+
+## Other useful commands
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server with hot reload |
+| `npm run build` | Create an optimized production build in `dist/` |
+| `npm run preview` | Serve the production build locally (run `build` first) |
+| `npm run lint` | Run ESLint on the project |
+
+### Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+After `build`, deploy the `dist` folder to any static host (Netlify, Vercel, GitHub Pages, etc.).
+
+## Project structure
+
+```
+React Portfolio/
+├── public/           # Static assets
+├── src/
+│   ├── components/   # Navbar, Hero, About, Skills, Projects, Contact, Footer
+│   ├── App.jsx       # Main layout
+│   ├── App.css
+│   ├── main.jsx      # React entry point
+│   └── index.css     # Global styles
+├── index.html
+├── package.json
+├── vite.config.js
+└── .env              # Your EmailJS keys (not committed to Git)
+```
+
+## Tech stack
+
+- **React** — UI
+- **Vite** — dev server and build tool
+- **react-scroll** — smooth section navigation
+- **react-icons** — icons
+- **AOS** — scroll animations
+- **EmailJS** — contact form emails
+
+## Troubleshooting
+
+- **`npm install` fails** — Update Node.js to 18+ and try again.
+- **Port already in use** — Vite may pick another port; check the terminal output for the correct URL.
+- **Contact form errors** — Confirm `.env` exists, variable names start with `VITE_`, and you restarted `npm run dev` after creating or editing `.env`.
