@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
-import { HiMail, HiLocationMarker } from 'react-icons/hi'
+import { HiMail, HiLocationMarker, HiPhone } from 'react-icons/hi'
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -47,6 +47,10 @@ const Contact = () => {
             <div className="contact-item">
               <HiLocationMarker />
               <span>Sri Lanka</span>
+            </div>
+            <div className="contact-item">
+              <HiPhone />
+              <span>0775601147</span>
             </div>
           </div>
 

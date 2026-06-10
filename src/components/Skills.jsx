@@ -1,15 +1,16 @@
 import { useState, useEffect, useRef } from 'react'
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaJava, FaPhp, FaPython, FaDatabase } from 'react-icons/fa'
+import { FaJs, FaReact, FaPython, FaNodeJs, FaGitAlt } from 'react-icons/fa'
+import { SiTypescript, SiNextdotjs, SiPostgresql } from 'react-icons/si'
 
 const skills = [
-  { name: 'HTML', level: 90, icon: FaHtml5 },
-  { name: 'CSS', level: 85, icon: FaCss3Alt },
-  { name: 'JavaScript', level: 80, icon: FaJs },
-  { name: 'React', level: 75, icon: FaReact },
-  { name: 'Java', level: 70, icon: FaJava },
-  { name: 'PHP', level: 65, icon: FaPhp },
-  { name: 'Python', level: 60, icon: FaPython },
-  { name: 'MySQL', level: 65, icon: FaDatabase },
+  { name: 'Python', level: 90, icon: FaPython },
+  { name: 'JavaScript', level: 85, icon: FaJs },
+  { name: 'TypeScript', level: 80, icon: SiTypescript },
+  { name: 'Node.js', level: 85, icon: FaNodeJs },
+  { name: 'React', level: 80, icon: FaReact },
+  { name: 'Next.js', level: 75, icon: SiNextdotjs },
+  { name: 'PostgreSQL', level: 80, icon: SiPostgresql },
+  { name: 'Git', level: 85, icon: FaGitAlt },
 ]
 
 const Skills = () => {

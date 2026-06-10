@@ -2,6 +2,13 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
 const projects = [
   {
+    title: 'Smart Factory Inventory Management System',
+    desc: 'An intelligent system designed to manage and track factory inventory efficiently.',
+    tech: ['React', 'Node.js', 'MySQL'],
+    emoji: '🏭',
+    github: 'https://github.com/nawodya2003',
+  },
+  {
     title: 'Hospital Appointment System',
     desc: 'A Java-based hospital management system for handling patient appointments and records efficiently.',
     tech: ['Java', 'MySQL', 'Spring Boot'],

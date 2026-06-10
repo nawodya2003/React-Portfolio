@@ -10,7 +10,7 @@ const Hero = () => {
   useEffect(() => { AOS.init({ duration: 800, once: true }) }, [])
 
   const stats = [
-    { number: '5+', label: 'Experiences' },
+    { number: '2+', label: 'Experiences' },
     { number: '10+', label: 'Projects Done' },
     { number: '50+', label: 'Happy Clients' }
   ]
@@ -22,11 +22,11 @@ const Hero = () => {
           <p className="greeting" data-aos="fade-down" data-aos-delay="100">Hello, I&apos;m</p>
           <h1 data-aos="fade-up" data-aos-delay="200">Nawodya Rashmina</h1>
           <p className="role" data-aos="fade-up" data-aos-delay="300">
-            <span>Frontend Developer</span> &amp; Software Engineering Student
+            <span>AI &amp; Backend Engineer</span> &amp; Software Engineering Student
           </p>
           <p className="intro" data-aos="fade-up" data-aos-delay="400">
-            Passionate about building modern, responsive, and user-friendly applications
-            using Java, JavaScript, React, PHP, and Python.
+            Passionate about building intelligent backend systems, AI-driven applications, and scalable software solutions
+            using Java, JavaScript, Python, and modern AI frameworks.
           </p>
 
           <div className="social-icons" data-aos="fade-up" data-aos-delay="450">
