@@ -121,8 +121,6 @@
   padding-top: 80px;
   padding-bottom: 80px;
   background: rgba(10, 14, 39, 0.4);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
 }
 
 .hero-container {
@@ -292,14 +290,12 @@
   border-left: 0;
   border-right: 0;
   border-bottom: 5px solid rgba(255, 149, 0, 0.8);
-  filter: drop-shadow(0 -20px 60px rgba(255, 149, 0, 0.5));
   transition: all var(--transition);
   box-sizing: border-box;
 }
 
 .profile-pic:hover {
   transform: scale(1.02);
-  filter: drop-shadow(0 -20px 60px rgba(255, 149, 0, 0.6));
 }
 
 /* Tablet (1024px and down) */
@@ -409,8 +405,6 @@
 /* ===== ABOUT ===== */
 #about {
   background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
   max-width: 100%;
   padding-left: 24px;
   padding-right: 24px;
@@ -504,8 +498,6 @@
 /* ===== SKILLS ===== */
 #skills {
   background: rgba(10, 14, 39, 0.5);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
 }
 
 .skills-grid {
@@ -595,8 +587,6 @@
 /* ===== PROJECTS ===== */
 #projects {
   background: rgba(15, 23, 42, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .projects-grid {
@@ -697,8 +687,6 @@
 /* ===== CONTACT ===== */
 #contact {
   background: rgba(10, 14, 39, 0.55);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
   max-width: 100%;
   padding-left: 24px;
   padding-right: 24px;
