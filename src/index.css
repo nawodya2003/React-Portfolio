@@ -3,9 +3,9 @@
   --primary-dark: #ff8c00;
   --primary-light: #ffa500;
   --primary-bg: rgba(255, 149, 0, 0.15);
-  --bg: #0f172a;
-  --bg-alt: #1e293b;
-  --bg-card: #1e293b;
+  --bg: transparent;
+  --bg-alt: transparent;
+  --bg-card: rgba(30, 41, 59, 0.4);
   --text: #cbd5e1;
   --text-dark: #f1f5f9;
   --text-light: #94a3b8;
@@ -37,8 +37,22 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: url('./assets/bg-wave.png') no-repeat center center fixed;
+  background-size: cover;
   -webkit-tap-highlight-color: transparent;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 14, 39, 0.65);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: -1;
 }
 
 #root {

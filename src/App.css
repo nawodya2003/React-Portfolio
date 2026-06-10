@@ -120,7 +120,7 @@
   justify-content: center;
   padding-top: 80px;
   padding-bottom: 80px;
-  background: #0a0e27;
+  background: transparent;
 }
 
 .hero-container {
@@ -406,7 +406,7 @@
 
 /* ===== ABOUT ===== */
 #about {
-  background: var(--bg-alt);
+  background: transparent;
   max-width: 100%;
   padding-left: 24px;
   padding-right: 24px;
@@ -672,7 +672,7 @@
 
 /* ===== CONTACT ===== */
 #contact {
-  background: var(--bg-alt);
+  background: transparent;
   max-width: 100%;
   padding-left: 24px;
   padding-right: 24px;
@@ -791,7 +791,7 @@
 
 /* ===== FOOTER ===== */
 .footer {
-  background: #020617;
+  background: rgba(2, 6, 23, 0.6);
   color: #fff;
   text-align: center;
   padding: 40px 24px;
