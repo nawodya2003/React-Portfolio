@@ -498,7 +498,7 @@
 /* ===== SKILLS ===== */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 24px;
 }
 
@@ -601,13 +601,22 @@
 
 .project-card .project-img {
   width: 100%;
-  height: 160px;
+  height: 140px;
   background: var(--bg-alt);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
+  display: block;
+  overflow: hidden;
   border-bottom: 1px solid var(--border);
+}
+
+.project-card .project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.05);
 }
 
 .project-card .project-body {
@@ -658,7 +667,7 @@
 
 @media (max-width: 480px) {
   .project-card .project-body { padding: 16px; }
-  .project-card .project-img { height: 160px; font-size: 2.5rem; }
+  .project-card .project-img { height: 120px; }
 }
 
 /* ===== CONTACT ===== */

@@ -1,53 +1,52 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import factoryImg from '../assets/factory.png'
+import hospitalImg from '../assets/hospital.png'
+import studentImg from '../assets/student.png'
+import mcqImg from '../assets/mcq.png'
+import videoImg from '../assets/video.png'
+import fingerImg from '../assets/finger.png'
 
 const projects = [
   {
     title: 'Smart Factory Inventory Management System',
     desc: 'An intelligent system designed to manage and track factory inventory efficiently.',
     tech: ['React', 'Node.js', 'MySQL'],
-    emoji: '🏭',
+    image: factoryImg,
     github: 'https://github.com/nawodya2003',
   },
   {
     title: 'Hospital Appointment System',
     desc: 'A Java-based hospital management system for handling patient appointments and records efficiently.',
     tech: ['Java', 'MySQL', 'Spring Boot'],
-    emoji: '🏥',
+    image: hospitalImg,
     github: 'https://github.com/nawodya2003/Hospital_Appointment_System',
   },
   {
     title: 'Students Management System',
     desc: 'A PHP and MySQL-based system for managing student records, attendance, and academic data.',
     tech: ['PHP', 'MySQL', 'Bootstrap'],
-    emoji: '🎓',
+    image: studentImg,
     github: 'https://github.com/nawodya2003/Students-Management-System',
   },
   {
     title: 'Auto MCQ Marking App',
     desc: 'An automated system for grading multiple-choice questions using image processing techniques.',
     tech: ['Python', 'OpenCV', 'Flask'],
-    emoji: '📝',
+    image: mcqImg,
     github: 'https://github.com/nawodya2003/Auto_MCQ_marking_App',
   },
   {
     title: 'Video Compressor',
     desc: 'A desktop application that compresses video files without significant quality loss.',
     tech: ['Python', 'FFmpeg', 'PyQt'],
-    emoji: '🎥',
+    image: videoImg,
     github: 'https://github.com/nawodya2003/Video-Compressor',
-  },
-  {
-    title: 'React Portfolio',
-    desc: 'A modern, responsive portfolio website built with React featuring dark theme and smooth animations.',
-    tech: ['React', 'CSS', 'EmailJS'],
-    emoji: '⚛',
-    github: 'https://github.com/nawodya2003/React-Portfolio',
   },
   {
     title: 'Finger Counting Application',
     desc: 'A computer vision app that counts fingers in real-time using a webcam feed.',
     tech: ['Python', 'OpenCV', 'MediaPipe'],
-    emoji: '✋',
+    image: fingerImg,
     github: 'https://github.com/nawodya2003/Finger-counting-application',
   },
 ]
@@ -63,7 +62,9 @@ const Projects = () => {
       <div className="projects-grid">
         {projects.map((project, i) => (
           <div key={project.title} className="project-card" data-aos="fade-up" data-aos-delay={i * 100}>
-            <div className="project-img">{project.emoji}</div>
+            <div className="project-img">
+              <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </div>
             <div className="project-body">
               <h3>{project.title}</h3>
               <p>{project.desc}</p>

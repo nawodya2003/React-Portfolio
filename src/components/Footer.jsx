@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -6,7 +6,6 @@ const Footer = () => {
       <div className="social-links">
         <a href="https://github.com/nawodya" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
         <a href="https://linkedin.com/in/nawodya" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
-        <a href="https://twitter.com/nawodya" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /></a>
       </div>
       <p>&copy; {new Date().getFullYear()} Nawodya Rashmina. All rights reserved.</p>
     </footer>

@@ -1,15 +1,17 @@
 import { useState, useEffect, useRef } from 'react'
-import { FaJs, FaReact, FaPython, FaNodeJs, FaGitAlt } from 'react-icons/fa'
-import { SiTypescript, SiNextdotjs, SiPostgresql } from 'react-icons/si'
+import { FaJs, FaReact, FaPython, FaNodeJs, FaGitAlt, FaJava, FaDocker, FaPhp, FaDatabase } from 'react-icons/fa'
+import { SiNextdotjs } from 'react-icons/si'
 
 const skills = [
   { name: 'Python', level: 90, icon: FaPython },
+  { name: 'Java', level: 85, icon: FaJava },
   { name: 'JavaScript', level: 85, icon: FaJs },
-  { name: 'TypeScript', level: 80, icon: SiTypescript },
+  { name: 'PHP', level: 80, icon: FaPhp },
   { name: 'Node.js', level: 85, icon: FaNodeJs },
   { name: 'React', level: 80, icon: FaReact },
   { name: 'Next.js', level: 75, icon: SiNextdotjs },
-  { name: 'PostgreSQL', level: 80, icon: SiPostgresql },
+  { name: 'MySQL', level: 80, icon: FaDatabase },
+  { name: 'Docker', level: 70, icon: FaDocker },
   { name: 'Git', level: 85, icon: FaGitAlt },
 ]
 

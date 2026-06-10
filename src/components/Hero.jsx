@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll'
 import { HiArrowRight } from 'react-icons/hi'
-import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
@@ -30,17 +30,11 @@ const Hero = () => {
           </p>
 
           <div className="social-icons" data-aos="fade-up" data-aos-delay="450">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
-              <FaInstagram />
-            </a>
             <a href="https://www.linkedin.com/in/nawodya-rashmina-59aa2435b" target="_blank" rel="noopener noreferrer" className="social-link">
               <FaLinkedin />
             </a>
             <a href="https://github.com/nawodya2003" target="_blank" rel="noopener noreferrer" className="social-link">
               <FaGithub />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">
-              <FaTwitter />
             </a>
           </div>
 
