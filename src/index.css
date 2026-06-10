@@ -37,22 +37,10 @@ html {
 
 body {
   margin: 0;
-  background: url('./assets/bg-wave.png') no-repeat center center fixed;
+  background: url('/bg-wave.png') no-repeat center center fixed;
   background-size: cover;
   -webkit-tap-highlight-color: transparent;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(10, 14, 39, 0.65);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  z-index: -1;
+  min-height: 100vh;
 }
 
 #root {
@@ -62,9 +50,7 @@ body::before {
 }
 
 section {
-  padding: 100px 24px;
-  max-width: var(--max-width);
-  margin: 0 auto;
+  padding: 100px 0;
   width: 100%;
 }
 

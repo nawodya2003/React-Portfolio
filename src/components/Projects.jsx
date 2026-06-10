@@ -54,10 +54,11 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects">
-      <div className="section-title" data-aos="fade-up">
-        <h2>Projects</h2>
-        <p>Some of my recent work</p>
-      </div>
+      <div className="container">
+        <div className="section-title" data-aos="fade-up">
+          <h2>Projects</h2>
+          <p>Some of my recent work</p>
+        </div>
 
       <div className="projects-grid">
         {projects.map((project, i) => (
@@ -79,6 +80,7 @@ const Projects = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   )

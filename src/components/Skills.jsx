@@ -32,10 +32,11 @@ const Skills = () => {
 
   return (
     <section id="skills" ref={ref}>
-      <div className="section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Technologies I work with</p>
-      </div>
+      <div className="container">
+        <div className="section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <p>Technologies I work with</p>
+        </div>
 
       <div className="skills-grid">
         {skills.map((skill, i) => (
@@ -51,6 +52,7 @@ const Skills = () => {
             <span className="skill-level">{skill.level}%</span>
           </div>
         ))}
+      </div>
       </div>
     </section>
   )
