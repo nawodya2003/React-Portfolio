@@ -1,18 +1,15 @@
 import { useState, useEffect, useRef } from 'react'
-import { FaJs, FaReact, FaPython, FaNodeJs, FaGitAlt, FaJava, FaDocker, FaPhp, FaDatabase } from 'react-icons/fa'
-import { SiNextdotjs } from 'react-icons/si'
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaJava, FaPhp, FaPython, FaDatabase } from 'react-icons/fa'
 
 const skills = [
-  { name: 'Python', level: 90, icon: FaPython },
-  { name: 'Java', level: 85, icon: FaJava },
-  { name: 'JavaScript', level: 85, icon: FaJs },
+  { name: 'HTML', level: 90, icon: FaHtml5 },
+  { name: 'CSS', level: 85, icon: FaCss3Alt },
+  { name: 'JavaScript', level: 80, icon: FaJs },
+  { name: 'React', level: 75, icon: FaReact },
+  { name: 'Java', level: 70, icon: FaJava },
   { name: 'PHP', level: 80, icon: FaPhp },
-  { name: 'Node.js', level: 85, icon: FaNodeJs },
-  { name: 'React', level: 80, icon: FaReact },
-  { name: 'Next.js', level: 75, icon: SiNextdotjs },
+  { name: 'Python', level: 85, icon: FaPython },
   { name: 'MySQL', level: 80, icon: FaDatabase },
-  { name: 'Docker', level: 70, icon: FaDocker },
-  { name: 'Git', level: 85, icon: FaGitAlt },
 ]
 
 const Skills = () => {
@@ -32,11 +29,10 @@ const Skills = () => {
 
   return (
     <section id="skills" ref={ref}>
-      <div className="container">
-        <div className="section-title" data-aos="fade-up">
-          <h2>Skills</h2>
-          <p>Technologies I work with</p>
-        </div>
+      <div className="section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Technologies I work with</p>
+      </div>
 
       <div className="skills-grid">
         {skills.map((skill, i) => (
@@ -52,7 +48,6 @@ const Skills = () => {
             <span className="skill-level">{skill.level}%</span>
           </div>
         ))}
-      </div>
       </div>
     </section>
   )
