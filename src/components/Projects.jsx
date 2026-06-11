@@ -8,11 +8,11 @@ import fingerImg from '../assets/finger.png'
 
 const projects = [
   {
-    title: 'Smart Factory Inventory Management System',
-    desc: 'An intelligent system designed to manage and track factory inventory efficiently.',
-    tech: ['React', 'Node.js', 'MySQL'],
-    image: factoryImg,
-    github: 'https://github.com/nawodya2003',
+    title: 'Finger Counting Application',
+    desc: 'A computer vision app that counts fingers in real-time using a webcam feed.',
+    tech: ['Python', 'OpenCV', 'MediaPipe'],
+    image: fingerImg,
+    github: 'https://github.com/nawodya2003/Finger-counting-application',
   },
   {
     title: 'Hospital Appointment System',
@@ -43,12 +43,13 @@ const projects = [
     github: 'https://github.com/nawodya2003/Video-Compressor',
   },
   {
-    title: 'Finger Counting Application',
-    desc: 'A computer vision app that counts fingers in real-time using a webcam feed.',
-    tech: ['Python', 'OpenCV', 'MediaPipe'],
-    image: fingerImg,
-    github: 'https://github.com/nawodya2003/Finger-counting-application',
+    title: 'Smart Factory Inventory Management System',
+    desc: 'An intelligent system designed to manage and track factory inventory efficiently.',
+    tech: ['React', 'Node.js', 'MySQL'],
+    image: factoryImg,
+    github: 'https://github.com/nawodya2003/MY_Northsea',
   },
+  
 ]
 
 const Projects = () => {
