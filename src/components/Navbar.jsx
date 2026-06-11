@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="container">
-        <Link to="hero" smooth duration={500} className="logo">
+        <Link to="hero" smooth duration={100} className="logo">
           Nawodya Rashmina<span>.</span>
         </Link>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
               key={item}
               to={item.toLowerCase() === 'home' ? 'hero' : item.toLowerCase()}
               smooth
-              duration={500}
+              duration={100}
               spy
               offset={-70}
               activeClass="active"

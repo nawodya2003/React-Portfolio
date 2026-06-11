@@ -116,7 +116,6 @@ React Portfolio/
 - **react-scroll** — smooth section navigation
 - **react-icons** — icons
 - **AOS** — scroll animations
-- **EmailJS** — contact form emails
 
 ## Troubleshooting
 
