@@ -42,15 +42,15 @@ const Contact = () => {
             </p>
             <div className="contact-item">
               <HiMail />
-              <span>uninawodya@gmail.com</span>
+              <span>nawodyarashmina@gmail.com</span>
             </div>
             <div className="contact-item">
               <HiLocationMarker />
-              <span>Sri Lanka</span>
+              <span>Dematapitiya Road Lunuwila, Sri Lanka</span>
             </div>
             <div className="contact-item">
               <HiPhone />
-              <span>0775601147</span>
+              <span>+94775601147</span>
             </div>
           </div>
 

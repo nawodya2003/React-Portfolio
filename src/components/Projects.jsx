@@ -1,4 +1,5 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import portfolioImg from '../assets/portfolio.png'
 import factoryImg from '../assets/factory.png'
 import hospitalImg from '../assets/hospital.png'
 import studentImg from '../assets/student.png'
@@ -8,8 +9,36 @@ import fingerImg from '../assets/finger.png'
 
 const projects = [
   {
+    title: 'Inventory Management System',
+    desc: 'Developed a web-based stock and sales management system featuring demand forecasting using machine learning.',
+    tech: ['React', 'Node.js', 'MySQL', 'Machine Learning'],
+    image: factoryImg,
+    github: 'https://github.com/nawodya2003/MY_Northsea',
+  },
+  {
+    title: 'n8n Ai Workflow Automation',
+    desc: 'Automated digital content creation and social media publishing workflows using n8n and AI tools.',
+    tech: ['n8n', 'AI Tools', 'Workflow Automation'],
+    image: portfolioImg,
+    github: 'https://github.com/nawodya2003',
+  },
+  {
+    title: 'Video Compressor',
+    desc: 'Built a desktop video compression utility using Python, FFmpeg, and PyInstaller.',
+    tech: ['Python', 'FFmpeg', 'PyInstaller'],
+    image: videoImg,
+    github: 'https://github.com/nawodya2003/Video-Compressor',
+  },
+  {
+    title: 'Student Management System Using PHP',
+    desc: 'Created a dynamic web application for managing student records using PHP and MySQL.',
+    tech: ['PHP', 'MySQL', 'Web Application'],
+    image: studentImg,
+    github: 'https://github.com/nawodya2003/Students-Management-System',
+  },
+  {
     title: 'Finger Counting Application',
-    desc: 'A computer vision app that counts fingers in real-time using a webcam feed.',
+    desc: 'Developed a real-time computer vision application for hand gesture recognition using Python, OpenCV, and MediaPipe.',
     tech: ['Python', 'OpenCV', 'MediaPipe'],
     image: fingerImg,
     github: 'https://github.com/nawodya2003/Finger-counting-application',
@@ -20,36 +49,7 @@ const projects = [
     tech: ['Java', 'MySQL', 'Spring Boot'],
     image: hospitalImg,
     github: 'https://github.com/nawodya2003/Hospital_Appointment_System',
-  },
-  {
-    title: 'Students Management System',
-    desc: 'A PHP and MySQL-based system for managing student records, attendance, and academic data.',
-    tech: ['PHP', 'MySQL', 'Bootstrap'],
-    image: studentImg,
-    github: 'https://github.com/nawodya2003/Students-Management-System',
-  },
-  {
-    title: 'Auto MCQ Marking App',
-    desc: 'An automated system for grading multiple-choice questions using image processing techniques.',
-    tech: ['Python', 'OpenCV', 'Flask'],
-    image: mcqImg,
-    github: 'https://github.com/nawodya2003/Auto_MCQ_marking_App',
-  },
-  {
-    title: 'Video Compressor',
-    desc: 'A desktop application that compresses video files without significant quality loss.',
-    tech: ['Python', 'FFmpeg', 'PyQt'],
-    image: videoImg,
-    github: 'https://github.com/nawodya2003/Video-Compressor',
-  },
-  {
-    title: 'Smart Factory Inventory Management System',
-    desc: 'An intelligent system designed to manage and track factory inventory efficiently.',
-    tech: ['React', 'Node.js', 'MySQL'],
-    image: factoryImg,
-    github: 'https://github.com/nawodya2003/MY_Northsea',
-  },
-  
+  }
 ]
 
 const Projects = () => {

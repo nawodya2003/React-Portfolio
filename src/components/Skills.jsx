@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaJava, FaPhp, FaPython, FaDatabase, FaNodeJs, FaGitAlt } from 'react-icons/fa'
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaJava, FaPhp, FaPython, FaDatabase, FaNodeJs, FaDocker } from 'react-icons/fa'
 
 const skills = [
   { name: 'HTML', level: 90, icon: FaHtml5 },
@@ -11,7 +11,7 @@ const skills = [
   { name: 'PHP', level: 80, icon: FaPhp },
   { name: 'Python', level: 85, icon: FaPython },
   { name: 'MySQL', level: 80, icon: FaDatabase },
-  { name: 'Git', level: 85, icon: FaGitAlt },
+  { name: 'Docker', level: 75, icon: FaDocker },
 ]
 
 const Skills = () => {

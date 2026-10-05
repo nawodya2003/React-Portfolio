@@ -10,9 +10,7 @@ const Hero = () => {
   useEffect(() => { AOS.init({ duration: 800, once: true }) }, [])
 
   const stats = [
-    { number: '2+', label: 'Experiences' },
-    { number: '10+', label: 'Projects Done' },
-    { number: '50+', label: 'Happy Clients' }
+    { number: '10+', label: 'Projects Done' }
   ]
 
   return (
@@ -22,11 +20,10 @@ const Hero = () => {
           <p className="greeting" data-aos="fade-down" data-aos-delay="100">Hello, I&apos;m</p>
           <h1 data-aos="fade-up" data-aos-delay="200">Nawodya Rashmina</h1>
           <p className="role" data-aos="fade-up" data-aos-delay="300">
-            <span>AI &amp; Backend Engineer</span> &amp; Software Engineering Student
+            <span>Software Engineer</span> &amp; Undergraduate at ITUM
           </p>
           <p className="intro" data-aos="fade-up" data-aos-delay="400">
-            Passionate about building intelligent backend systems, AI-driven applications, and scalable software solutions
-            using Java, JavaScript, Python, and modern AI frameworks.
+            I am a highly motivated undergraduate in Software Engineering at the University of Moratuwa, eager to join as a Full Stack Software Engineer Intern, ready to develop modern high tech web and mobile applications.
           </p>
 
           <div className="social-icons" data-aos="fade-up" data-aos-delay="450">

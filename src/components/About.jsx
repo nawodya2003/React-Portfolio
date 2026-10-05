@@ -12,17 +12,11 @@ const About = () => {
         <div className="about-content">
           <div className="about-text" data-aos="fade-right">
             <p>
-              I&apos;m a Software Engineering Student passionate about building intelligent backend systems
-              and AI-driven applications using Python, Java, JavaScript, and databases like MySQL.
-            </p>
-            <p>
-              I enjoy developing robust architectures, optimizing server-side logic, and integrating machine
-              learning models that solve real-world problems. Every project is an opportunity to learn
-              and push my boundaries as an engineer.
+              I am a highly motivated undergraduate in Software Engineering at the University of Moratuwa, eager to join as a Full Stack Software Engineer Intern. I am self motivated, ready to develop modern high tech web and mobile applications, and excited to contribute to innovative SaaS products while learning every day in a collaborative environment.
             </p>
             <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', marginTop: '16px' }}>
               <strong style={{ color: 'var(--text-dark)' }}>Technologies:</strong>{' '}
-              HTML &bull; CSS &bull; JavaScript &bull; React &bull; Java &bull; PHP &bull; Python &bull; MySQL
+              Python &bull; JavaScript &bull; Java &bull; PHP &bull; HTML &bull; CSS &bull; SQL &bull; React &bull; Spring Boot
             </p>
           </div>
 
@@ -30,24 +24,28 @@ const About = () => {
             <div className="about-card">
               <h3><HiAcademicCap /> Education</h3>
               <p>Diploma in Information Technology</p>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginBottom: '8px' }}>
+                University of Moratuwa, ITUM (2025 - 2027)
+              </p>
+              <p>Level 02 Completed</p>
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>
-                University of Moratuwa, Sri Lanka (2025 - 2027)
+                DP Education IT Campus (2024 - 2025)
               </p>
             </div>
 
             <div className="about-card">
               <h3><HiStar /> Interests</h3>
               <ul>
-                <li>Artificial Intelligence</li>
-                <li>Backend Development</li>
-                <li>Machine Learning</li>
-                <li>Software Engineering</li>
+                <li>Full Stack Development</li>
+                <li>Web & Mobile Apps</li>
+                <li>SaaS Products</li>
+                <li>AI Tools & Automation</li>
               </ul>
             </div>
 
             <div className="about-card">
               <h3><HiBriefcase /> Career Goals</h3>
-              <p>To become a professional AI & Backend Software Engineer and build impactful, intelligent software solutions.</p>
+              <p>To join as a Full Stack Software Engineer Intern and contribute to innovative SaaS products.</p>
             </div>
           </div>
         </div>
